@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# 🧩 React To-Do App Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Book An Artist frontend coding challenge!
 
-## Available Scripts
+This assignment is designed to give you an insight into the day-to-day work you'll encounter in this role, and it's also an opportunity for you to showcase your problem-solving skills, thought process, and frontend development expertise.
 
-In the project directory, you can run:
+We hope you find this challenge engaging and enjoyable.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📝 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a **broken React to-do application** that you'll need to fix and enhance. It includes several bugs and missing features that we want you to identify and solve.
 
-### `npm test`
+Your goal is to fix the issues listed below and implement a few enhancements. You’re welcome to go above and beyond if you feel inspired!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✅ Tasks to Complete
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You will be required to do the following:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] **Fix the app to display a list of all tasks**
+- [ ] **Fix the layout** so checkboxes are properly listed in a column
+- [ ] **Fix the app to allow adding a new task**
+- [ ] **Fix the functionality to mark a task as completed**
+- [ ] **Fix the functionality to delete a task**
+- [ ] **Fix the count of completed tasks**
+- [ ] Add a **search feature** to filter tasks
+- [ ] **Add a filter button** to view:
+  - Only completed tasks
+  - Only incomplete tasks
+  - All tasks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⭐ Bonus Points
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+These are optional but appreciated:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] Implement **pagination** or **lazy-loading** if the list has more than 10 items
+- [ ] Write **test cases** (Jest + React Testing Library preferred)
+- [ ] Improve UI/UX or layout
+- [ ] Add **accessibility enhancements**
+- [ ] Create additional views (like task detail or edit mode)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Get Started
 
-## Learn More
+To get started with the challenge, clone this repository, install dependencies, and run the app locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://gitlab.com/parekhjigar/react-todo-app-challenge.git
+cd react-to-do-app-challenge
+npm install
+npm start
+```
+---
+## 📬 Submission Guide
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When you're done:
 
-### Code Splitting
+1. Push your completed code to a **public Git repository** (GitHub, GitLab, etc.).
+2. Email the link to: **<jigar@bookanartist.co>**
+3. Include a short README in your repo with any notes about your implementation, improvements made, or assumptions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Please submit your solution within **3 days** of receiving the challenge.
 
-### Analyzing the Bundle Size
+---
+## ❓ Questions?
+Feel free to reach out to us if you have any doubts, questions, or run into technical issues.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📧 Email: <jigar@bookanartist.co>
 
-### Making a Progressive Web App
+We’re looking forward to seeing what you come up with.
+Good luck and have fun!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
