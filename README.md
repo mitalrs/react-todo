@@ -1,18 +1,8 @@
 # 🧩 React To-Do App Challenge
 
-Welcome to the Book An Artist frontend coding challenge!
-
-This assignment is designed to give you an insight into the day-to-day work you'll encounter in this role, and it's also an opportunity for you to showcase your problem-solving skills, thought process, and frontend development expertise.
-
-We hope you find this challenge engaging and enjoyable.
-
----
-
 ## 📝 Overview
 
-This is a **broken React to-do application** that you'll need to fix and enhance. It includes several bugs and missing features that we want you to identify and solve.
-
-Your goal is to fix the issues listed below and implement a few enhancements. You’re welcome to go above and beyond if you feel inspired!
+This project is my solution to the **React To-Do App Challenge**. The challenge involved fixing a broken React application and enhancing its functionality. Below, I’ve outlined the steps I took to complete the tasks, along with any additional improvements I made.
 
 ---
 
@@ -51,30 +41,26 @@ These are optional but appreciated:
 To get started with the challenge, clone this repository, install dependencies, and run the app locally:
 
 ```bash
-git clone https://gitlab.com/parekhjigar/react-todo-app-challenge.git
-cd react-to-do-app-challenge
+git clone https://github.com/mitalrs/react-todo.git
+cd react-todo-challenge
 npm install
-npm start
+npm run start
 ```
 ---
-## 📬 Submission Guide
+## 📬 Submission Notes
 
-When you're done:
+##### Repository Link: [https://github.com/mitalrs/react-todo]
 
-1. Push your completed code to a **public Git repository** (GitHub, GitLab, etc.).
-2. Email the link to: **<jigar@bookanartist.co>**
-3. Include a short README in your repo with any notes about your implementation, improvements made, or assumptions.
+##### Assumptions:
 
-Please submit your solution within **3 days** of receiving the challenge.
+- Assumed that tasks should persist only during the session (not stored in local storage or a database).
 
----
-## ❓ Questions?
-Feel free to reach out to us if you have any doubts, questions, or run into technical issues.
-
-📧 Email: <jigar@bookanartist.co>
-
-We’re looking forward to seeing what you come up with.
-Good luck and have fun!
+##### Challenges Faced:
+1. The original app setup required a different Node.js version, so I created a fresh React app and manually moved the code.
+2. While implementing search and filter, I didn't want to introduce extra global states to store unfiltered data during every CRUD operation. I solved it using useRef to keep a synced copy of the original todos.
+3. During filtering, I faced an issue where updating a task (like marking completed) while a filter was active would reset the original list.
+To fix this, I used a useRef to store the "true" original todos, and manually updated it inside a useEffect.
+By indexing the todos by their label during updates (finding the correct todo and updating it instead of overwriting), I made sure all real-time changes stay synced even when filters are applied.
 
 ---
 
