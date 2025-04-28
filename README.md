@@ -39,7 +39,7 @@ You will be required to do the following:
 These are optional but appreciated:
 
 - [x] Implement **pagination** or **lazy-loading** if the list has more than 10 items
-- [ ] Write **test cases** (Jest + React Testing Library preferred)
+- [x] Write **test cases** (Jest + React Testing Library preferred)
 - [ ] Improve UI/UX or layout
 - [ ] Add **accessibility enhancements**
 - [ ] Create additional views (like task detail or edit mode)

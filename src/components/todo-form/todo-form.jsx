@@ -3,9 +3,9 @@ import { TodosContext } from '../../todo-context';
 import './todo-form.scss';
 
 export const TodoForm = () => {
-  const { todos, setTodos } = React.useContext(TodosContext);
+  const { setTodos } = React.useContext(TodosContext);
   const [task, setTask] = React.useState('');
-  
+
 
   const handleAddTodo = () => {
     // Fix the app to display list of all tasks
