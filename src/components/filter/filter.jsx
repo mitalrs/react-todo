@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodosContext } from '../../todo-context'; // Assuming this is the correct path
+import { TodosContext } from '../../todo-context'; 
 import './filter.scss';
 
 export const Filter = () => {
@@ -18,17 +18,15 @@ export const Filter = () => {
         // When in filtered view, ensure original ref has all the latest changes
         const updatedOriginal = [...originalTodosRef.current];
         
-        // Find updates or new items from current filtered view
+        // Find updates or new items from current filtered view (this for if update a any item during the filter)
         todos.forEach(todo => {
           const index = updatedOriginal.findIndex(t => 
             t.label === todo.label
           );
           
           if (index !== -1) {
-            // Update existing item in original list
             updatedOriginal[index] = { ...todo };
           } else {
-            // Add new item to original list
             updatedOriginal.push({ ...todo });
           }
         });

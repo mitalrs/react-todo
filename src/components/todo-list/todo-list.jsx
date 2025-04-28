@@ -18,7 +18,6 @@ export const TodoList = () => {
     setTodos((prevTodos) => {
       const updatedTodos = prevTodos.filter((todoItem) => todoItem.id !== id);
       
-      // Check if the current page is now empty and we're not on the first page
       const currentPageItems = updatedTodos.slice(indexOfFirstItem, indexOfLastItem);
       if (currentPageItems.length === 0 && currentPage > 1) {
         // Schedule state update for next render cycle to avoid batching issues

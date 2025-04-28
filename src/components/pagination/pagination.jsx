@@ -14,8 +14,7 @@ export const Pagination = ({
     if (totalPages === 0) {
       setCurrentPage(1);
     } else if (currentPage > totalPages) {
-      // If we're on a page that no longer exists (e.g., after deleting items),
-      // go back to the last available page
+      // If we're on a page that no longer exists,go back to the last available page
       setCurrentPage(totalPages);
       onPageChange(totalPages);
     }
@@ -35,7 +34,6 @@ export const Pagination = ({
     }
   };
 
-  // Don't render pagination if there are no items
   if (totalItems === 0) {
     return null;
   }

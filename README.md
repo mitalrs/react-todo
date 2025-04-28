@@ -38,7 +38,7 @@ You will be required to do the following:
 
 These are optional but appreciated:
 
-- [ ] Implement **pagination** or **lazy-loading** if the list has more than 10 items
+- [x] Implement **pagination** or **lazy-loading** if the list has more than 10 items
 - [ ] Write **test cases** (Jest + React Testing Library preferred)
 - [ ] Improve UI/UX or layout
 - [ ] Add **accessibility enhancements**
