@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { Search } from './components/search';
+import { Filter } from './components/filter'
 import { TodoForm } from './components/todo-form';
 import { TodoList } from './components/todo-list';
 import { TodoResults } from './components/todo-results';
 import { TodosContext } from './todo-context';
-import {  useEffect } from "react";
+import { useEffect } from "react";
 import './App.css';
 
 const todosTemplate = [
@@ -66,6 +68,7 @@ const todosTemplate = [
 
 function App() {
   const [todos, setTodos] = React.useState([]);
+  const [originalTodos, setOriginalTodos] = React.useState(null);
 
   useEffect(() => {
     const storedTodos = localStorage.getItem('todos');
@@ -77,7 +80,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-    <TodosContext.Provider value={{ todos, setTodos }}>
+      <TodosContext.Provider value={{ todos, setTodos, originalTodos, setOriginalTodos }}>
+        {/* Add a search feature to filter tasks */}
+        <Search />
+        <Filter />
         <TodoList />
         <TodoResults />
         <TodoForm />

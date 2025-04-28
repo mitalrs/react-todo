@@ -22,7 +22,7 @@ export const TodoList = () => {
   };
 
   const handleKeyUp = (e, id) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13) { //Enter key
       toggleCheck(id);
     }
   };
